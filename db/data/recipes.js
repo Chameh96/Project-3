@@ -47,7 +47,7 @@ export default [
     author: 'BBC Good Food'
   },
   {
-    title: 'Stickey soy and honey roasted salmon and vegetables',
+    title: 'Sticky soy and honey roasted salmon',
     image: 'https://i.imgur.com/MucSsfF.jpg',
     description: 'A satisfying and healthy way with salmon fillets',
     method: [
