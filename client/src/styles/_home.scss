@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  background-color: $body;
+}
+span {
+  font-weight: 900;
+}
+h1 {
+  letter-spacing: -2;
+}
+h1 a {
+  color: $main-text;
+  text-decoration: none;
+}
+h1 a:hover {
+  text-decoration: underline;
+  color: $main-text;
+}
+
+.carousel {
+  height: 68vh;
+  width: 100%;
+  background-color: $background;
+  .carousel-indicators {
+    margin-left: 800px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+
+  // .carousel-control-prev-icon {
+
+  // }
+  // .carousel-control-next-icon {
+  //   position: relative;
+  //   left: 50px;
+  // }
+  .item {
+    width: 100vw;
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      height: 68vh;
+
+      .img {
+        width: 50vw;
+        border-left: 2px solid $main-text;
+
+        .first-image {
+          width: 85%;
+          height: 40vh;
+          object-fit: cover;
+          position: relative;
+          left: 50px;
+          top: 60px;
+          border-radius: 5px;
+        }
+      }
+
+      .caption {
+        width: 50vw;
+        padding-top: 50px;
+        color: $main-text;
+        font-family: $content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .caption-text {
+          height: 270px;
+          width: 90%;
+        }
+        h1 {
+          font-size: 60px;
+          width: 100%;
+          font-size: 60px;
+          text-align: left;
+          font-weight: 300;
+          letter-spacing: -1px;
+          line-height: 1;
+        }
+        p {
+          width: 90%;
+          font-size: 22px;
+          font-weight: 100;
+          text-align: justify;
+        }
+        .link {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          width: 90%;
+          align-items: center;
+          margin-top: 50px;
+          a {
+            color: $main-text;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 300;
+            font-family: $header;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        button {
+          height: 40px;
+          background: $main-text;
+          color: $background;
+          width: 40px;
+          border-radius: 50%;
+          border: 3px solid $main-text;
+          font-size: 21px;
+          text-align: center;
+          font-weight: 600;
+          margin-left: 30px;
+        }
+        .button:hover {
+          background: $background;
+          color: $main-text;
+        }
+      }
+    }
+  }
+}
+.loading-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
+  margin-top: 100px;
+
+  h2 {
+    margin-top: 30px;
+  }
+}
+
+.heading-popular {
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px;
+  font-family: $logo;
+  margin-top: 20px;
+  color: $background;
+}
+.top-recipes {
+  font-family: $header;
+
+  .second-button {
+    height: 40px;
+    background: $main-text;
+    color: white;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid $main-text;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .second-button:hover {
+    background: white;
+    border: 3px solid $main-text;
+    color: $main-text;
+  }
+}
+
+.top-recipes {
+  .recipeCard {
+    .oneRecipe {
+      img {
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+      }
+
+      img:hover {
+        top: -10px;
+      }
+    }
+    .para {
+      color: #999;
+    }
+  }
+}
+
+.heading-four {
+  a {
+    text-decoration: none;
+    color: $main-text;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    width: 100vw;
+    height: 60vh;
+
+    .item {
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+        .img {
+          width: 100vw;
+          height: 300px;
+          margin-bottom: 30px;
+          padding-left: 20px;
+          border: none;
+
+          .first-image {
+            width: 70vw;
+            height: 200px;
+            object-fit: cover;
+            position: absolute;
+            top: 250px;
+            right: -40px;
+          }
+        }
+        .caption {
+          width: 100vw;
+          height: 300px;
+          h1 {
+            width: 50vw;
+            position: relative;
+            top: 30px;
+            left: 40px;
+            height: 100px;
+            font-size: 30px;
+          }
+          p {
+            display: none;
+          }
+          .link {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .top-recipes {
+    padding-top: 40px;
+
+    .recipeList {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      // padding-left: 40px;
+
+      .oneRecipe {
+        width: 80vw;
+        border: none;
+        padding-bottom: 5px;
+        .description-container {
+          img {
+            width: 100%;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .top-recipes {
+    margin-bottom: 150px;
+    margin-top: 80px;
+
+    .recipeList {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 100vw;
+      padding: 20px;
+
+      .oneRecipe {
+        width: 30vw;
+        height: 360px;
+        padding: 10px;
+        margin-top: 50px;
+        .description-container {
+          img {
+            width: 335px;
+            height: 265px;
+          }
+
+          .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+          }
+          .para {
+            color: #999;
+          }
+        }
+      }
+
+      .second-button {
+        position: relative;
+        bottom: 8px;
+        right: 10px;
+      }
+
+      .heading-four {
+        padding-top: 5px;
+        font-size: 20px;
+        width: 80%;
+      }
+    }
+  }
+}

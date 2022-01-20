@@ -1,0 +1,399 @@
+@media screen and (max-width: 600px) {
+  .single-recipe {
+    display: flex;
+    flex-direction: column;
+    .top-half {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .info-div {
+        text-align: center;
+        h2.singleRecipe-header {
+          font-family: $logo;
+        }
+        p {
+          font-size: 12px;
+        }
+        .add-delete-buttons {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          right: 5px;
+          button {
+            margin: 10px;
+            padding: 8px;
+          }
+          .delete-button {
+            color: $background;
+            background-color: $main-text;
+            border: 2px solid $main-text;
+            border-radius: 30px;
+          }
+          .delete-button:hover {
+            background-color: $background;
+            color: $main-text;
+          }
+          .update-button {
+            color: $background;
+            background-color: $main-text;
+            border: 2px solid $main-text;
+            border-radius: 30px;
+          }
+          .update-button:hover {
+            background-color: $background;
+            color: $main-text;
+          }
+        }
+      }
+
+      img {
+        width: 90vw;
+        height: 350px;
+        object-fit: cover;
+        position: relative;
+        left: 15px;
+      }
+      padding-bottom: 20px;
+    }
+    .meth-ing {
+      .line-break {
+        white-space: pre-line;
+      }
+      #ingredients {
+        padding-left: 20px;
+      }
+      #method {
+        padding: 10px;
+        h3 {
+          padding-top: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  .comments-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid $main-text;
+  }
+
+  .comment-form {
+    width: 100vw;
+    padding: 20px;
+    border-right: 2px solid $main-text;
+
+    h4 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .star-form {
+      padding-bottom: 20px;
+      .rating-para {
+        font-family: $header;
+        font-size: 15px;
+        position: relative;
+        right: 280px;
+      }
+      input {
+        display: none;
+      }
+    }
+    Form {
+      .form-floating {
+        padding-bottom: 10px;
+        .comment {
+          height: 200px;
+        }
+      }
+      .comment-error {
+        p {
+          color: red;
+          font-family: $header;
+          font-size: 15px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .toast-comment {
+    width: 100vw;
+    padding-top: 20px;
+
+    h4 {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .me-auto {
+      svg {
+        color: #ffc107;
+      }
+    }
+
+    .toast-container {
+      padding-left: 70px;
+      padding-bottom: 20px;
+      width: 80vw;
+      color: $background;
+      .toast-main {
+        height: 100px;
+      }
+      .toast-header {
+        button {
+          display: none;
+        }
+      }
+      .toast-body {
+        color: $background;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .single-recipe {
+    h2 {
+      text-align: center;
+      font-family: $logo;
+    }
+    .top-half {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid $main-text;
+      .image-div {
+        width: 50%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80%;
+          height: 80%;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+      .info-div {
+        width: 50%;
+        height: 75vh;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $header;
+
+        .info-contain {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          height: 80%;
+          justify-content: space-between;
+
+          .info-wrapper {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+            border: 2px dotted $main-text;
+            padding-top: 10px;
+            margin: 10px auto;
+          }
+
+          .first-div {
+            .one {
+              font-size: 18px;
+              text-align: left;
+            }
+          }
+          .second-div {
+            .two {
+              font-size: 18px;
+              text-align: right;
+            }
+          }
+        }
+        .keywords {
+          text-align: center;
+          font-family: $logo;
+          letter-spacing: 1.5px;
+        }
+        .description-div {
+          height: 20vh;
+
+          p {
+            font-size: 16px;
+            text-align: center;
+            font-style: italic;
+            margin: 0 auto;
+          }
+        }
+
+        .add-delete-buttons {
+          display: flex;
+          justify-content: center;
+          padding-top: 10px;
+
+          button {
+            margin: 10px;
+            padding: 8px;
+          }
+          .delete-button {
+            color: $background;
+            background-color: $main-text;
+            border: 2px solid $main-text;
+            border-radius: 30px;
+          }
+          .delete-button:hover {
+            background-color: $background;
+            color: $main-text;
+          }
+          .update-button {
+            color: $background;
+            background-color: $main-text;
+            border: 2px solid $main-text;
+            border-radius: 30px;
+          }
+          .update-button:hover {
+            background-color: $background;
+            color: $main-text;
+          }
+        }
+
+        .average-rating {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          p {
+            font-size: 16px;
+          }
+
+          .star {
+            position: relative;
+            margin: 5px;
+            color: #ffc107;
+          }
+        }
+      }
+    }
+    .meth-ing {
+      font-family: $header;
+      display: flex;
+      border-bottom: 2px solid $main-text;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      .line-break {
+        white-space: pre-line;
+      }
+      #ingredients {
+        width: 40%;
+        padding-left: 30px;
+      }
+      #method {
+        width: 60%;
+        padding-right: 30px;
+        padding-left: 30px;
+        border-left: 2px dotted $main-text;
+      }
+    }
+  }
+
+  .tips-para {
+    text-align: center;
+    padding-top: 10px;
+    font-family: $logo;
+    font-weight: 300;
+  }
+
+  .comments-container {
+    display: flex;
+    border-top: 2px solid $main-text;
+  }
+
+  .comment-form {
+    width: 50vw;
+    padding: 20px;
+    border-right: 2px solid $main-text;
+
+    button {
+      background-color: $main-text;
+      color: $background;
+      border: 2px solid $main-text;
+      border-radius: 30px;
+      width: 60px;
+    }
+
+    h4 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .star-form {
+      padding-bottom: 20px;
+
+      .rating-para {
+        font-family: $content;
+        font-size: 15px;
+        position: relative;
+        right: 280px;
+        color: $main-text;
+      }
+      input {
+        display: none;
+      }
+    }
+    Form {
+      color: $background;
+      .form-floating {
+        padding-bottom: 10px;
+
+        .comment {
+          height: 200px;
+          background-color: $body;
+        }
+      }
+      .comment-error {
+        p {
+          color: red;
+          font-family: $header;
+          font-size: 15px;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .toast-comment {
+    width: 50vw;
+    padding-top: 20px;
+
+    h4 {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .me-auto {
+      svg {
+        color: #ffc107;
+      }
+    }
+
+    .toast-container {
+      padding-left: 70px;
+      padding-bottom: 20px;
+      .toast-main {
+        width: 500px;
+      }
+      .toast-header {
+        button {
+          display: none;
+        }
+      }
+      .toast-body {
+        color: $background;
+      }
+    }
+  }
+}

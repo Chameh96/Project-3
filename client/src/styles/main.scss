@@ -1,0 +1,32 @@
+@import 'fonts';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'colours';
+@import 'header';
+@import 'nav';
+@import 'footer';
+@import 'about';
+@import 'home';
+@import 'recipeList';
+@import 'singleRecipe';
+@import 'account';
+@import 'addRecipe';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  padding-bottom: 100px;
+  background-color: $body;
+}
+.full-flex-wrapper {
+  display: flex;
+  width: 100%;
+  background: $body;
+  flex-grow: 1;
+}
+main {
+  background-color: $body;
+  flex-grow: 1;
+  height: 100%;
+}

@@ -1,0 +1,72 @@
+.account-container {
+  background-color: $body;
+  height: 95vh;
+}
+
+.accountDetails-container {
+  width: 35%;
+  margin: 0 auto;
+
+  form {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+.nav-tabs {
+  justify-content: center;
+  background-color: $background;
+  width: 100%;
+  height: 70px;
+
+  .nav-item {
+    width: 33.3%;
+    background-color: $main-text;
+    color: $background;
+    border: none;
+
+    .nav-link {
+      width: 100%;
+      height: 100%;
+      color: $background;
+      font-family: $header;
+      border-radius: none;
+      margin: 0 auto;
+    }
+    .nav-link.active {
+      background-color: $body;
+      color: $background;
+      border: none;
+    }
+  }
+}
+
+.account-header {
+  text-align: center;
+  font-family: $logo;
+  color: $background;
+}
+
+.buttons-account {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 20px;
+  }
+}
+
+.myRecipes-container,
+.savedRecipes-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+
+  a {
+    color: $background;
+  }
+  a.hover {
+    color: $main-text;
+  }
+}

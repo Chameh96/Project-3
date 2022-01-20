@@ -1,0 +1,110 @@
+.header-nav {
+  display: block;
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+
+    li {
+      line-height: 1;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 6px 20px 6px 0;
+      display: inline;
+      font-family: $header;
+    }
+    a {
+      text-decoration: none;
+      color: $main-text;
+    }
+    li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.hamburger-react {
+  z-index: 1046;
+  color: $main-text;
+  display: inline;
+}
+
+.offcanvas-header {
+  background-color: $background;
+}
+
+.offcanvas-body {
+  background-color: $background;
+  color: $main-text;
+  padding: 50px;
+
+  div {
+    padding-top: 20px;
+
+    .offcanvas-auth {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+
+      .auth-button {
+        color: $main-text;
+        border: none;
+        position: relative;
+        right: 58px;
+      }
+      .auth-button:hover {
+        text-decoration: underline;
+      }
+      .auth-button-account {
+        color: $main-text;
+        border: none;
+      }
+      .auth-button-account:hover {
+        text-decoration: underline;
+      }
+      .button-one {
+        color: $main-text;
+        border: none;
+        position: relative;
+        right: 68px;
+      }
+      .button-one:hover {
+        text-decoration: underline;
+      }
+      .button-two {
+        color: $main-text;
+        border: none;
+        position: relative;
+        right: 20px;
+      }
+      .button-two:hover {
+        text-decoration: underline;
+      }
+      button {
+        background-color: $background;
+        border: $background;
+      }
+    }
+    ul {
+      list-style: none;
+      line-height: 2.5;
+      font-family: $header;
+      padding: 10px;
+
+      li {
+        border-bottom: 2px solid $main-text;
+
+        a {
+          text-decoration: none;
+          color: $main-text;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

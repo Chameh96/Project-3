@@ -1,3 +1,6 @@
-export const port = 4000
-export const dbURI = 'mongodb://127.0.0.1:27017/aioli'
-export const secret = 'Secret Ingredient'
+import dotenv from 'dotenv'
+dotenv.config()
+
+export const port = process.env.PORT || 4000
+export const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/aioli'
+export const secret = process.env.SECRET || 'Secret Ingredient'

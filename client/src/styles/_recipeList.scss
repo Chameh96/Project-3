@@ -1,0 +1,160 @@
+.all-recipes {
+  height: 100%;
+}
+
+.heading {
+  h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: $logo;
+    color: $background;
+  }
+  p {
+    text-align: center;
+    font-family: $header;
+    font-size: 20px;
+    padding-top: 20px;
+    color: $background;
+  }
+}
+
+.toast-alert {
+  margin-bottom: 30px;
+  font-family: $content;
+  .toast-head {
+    font-size: 18px;
+  }
+  .toast-bod {
+    font-size: 15px;
+  }
+}
+
+form.search-allrecipes {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .searchInput {
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid $background;
+    color: $background;
+    width: 280px;
+    padding-right: 20px;
+  }
+  .searchInput:focus {
+    outline: none;
+  }
+  .arrow-icon {
+  }
+  a {
+    border-bottom: 2px solid $background;
+    font-size: 22px;
+    padding-bottom: 6px;
+    color: $background;
+  }
+}
+.no-results {
+  text-align: center;
+  padding: 10px;
+}
+
+.recipeList {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.oneRecipe {
+  height: 450px;
+  width: 350px;
+  margin: 10px;
+  margin-bottom: 10px;
+  color: $background;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  margin-bottom: 15px;
+
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+
+  img:hover {
+    top: -10px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    .second-button {
+      height: 40px;
+      background: $background;
+      color: $main-text;
+      width: 40px;
+      border-radius: 50%;
+      border: 3px solid $background;
+      font-size: 21px;
+      text-align: center;
+      font-weight: 600;
+      position: relative;
+      right: 10px;
+    }
+
+    .second-button:hover {
+      background-color: $main-text;
+      color: $background;
+    }
+    .clicked-button {
+      height: 40px;
+      background: $background;
+      color: $main-text;
+      width: 40px;
+      border-radius: 50%;
+      border: 3px solid $background;
+      font-size: 21px;
+      text-align: center;
+      font-weight: 600;
+      position: relative;
+      right: 10px;
+    }
+  }
+
+  h4 {
+    text-size-adjust: 1rem;
+    width: 75%;
+    overflow: hidden;
+    a {
+      color: $background;
+    }
+  }
+  .para {
+    color: $background;
+    font-size: 16px;
+  }
+
+  .tick-icon {
+    font-size: 32px;
+    color: black;
+  }
+}
+.trash-icon {
+  font-size: 26px;
+}
+.trash-icon:hover {
+  font-size: 30px;
+  cursor: pointer;
+}

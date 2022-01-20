@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    .nav-container {
+      .header-nav {
+        display: none;
+      }
+    }
+  }
+  .login-container {
+    .auth-buttons-container {
+      display: none;
+    }
+    .search-container {
+      display: none;
+    }
+  }
+  header {
+    h1 {
+      position: relative;
+      right: 30px;
+    }
+  }
+  .modal {
+    .modal-body {
+      button {
+        position: relative;
+        right: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .modal {
+    .modal-content {
+      background-color: $main-text;
+    }
+    .modal-header {
+      background-color: $main-text;
+      border: $background;
+    }
+    .modal-title {
+      position: relative;
+      margin-top: 30px;
+      left: 70px;
+      color: $background;
+    }
+    .modal-body {
+      padding-top: 20px;
+      border: none;
+      Form {
+        background-color: $main-text;
+        .form-label {
+          color: $background;
+        }
+        .form-control {
+          background-color: $background;
+          color: white;
+          border: 2px solid $background;
+        }
+      }
+      background-color: $main-text;
+      button {
+        position: relative;
+        left: 55px;
+      }
+    }
+    .modal-footer {
+      background-color: $main-text;
+      border: $background;
+      color: $background;
+    }
+  }
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: $background;
+  border-bottom: 3px solid $main-text;
+
+  h1 {
+    font-family: $logo;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+}
+.header-content {
+  height: 100%;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: $background;
+  color: $main-text;
+  align-items: center;
+  padding: 0 15px;
+
+  div {
+    display: inline-block;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 46.5%;
+  }
+  .login-container {
+    line-height: 1;
+    display: flex;
+    font-family: $header;
+
+    .auth-buttons-container {
+      padding-right: 20px;
+
+      .auth-button {
+        background: none;
+        border: none;
+        line-height: 1;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 6px 12px;
+        font-family: $header;
+        color: $main-text;
+      }
+      .auth-button:hover {
+        text-decoration: underline;
+      }
+      .login {
+        border-right: 2px solid $main-text;
+      }
+    }
+    .search-container {
+      svg {
+        height: 100%;
+      }
+      svg:hover {
+        cursor: pointer;
+      }
+      .searchBar-container {
+        display: flex;
+        align-items: center;
+      }
+      input {
+        background-color: inherit;
+        color: $main-text;
+        border: none;
+        border-bottom: 2px $main-text solid;
+        width: 150px;
+        font-size: 14px;
+        padding: 4px;
+      }
+      input:focus {
+        outline: none;
+      }
+      .arrow-icon-nav {
+        color: $main-text;
+        size: 22px;
+      }
+    }
+  }
+}
+
+.error {
+  color: red;
+}
+
+.modal {
+  font-family: $header;
+
+  .modal-body {
+    margin-top: 30px;
+
+    button {
+      background-color: $background;
+      border: $background;
+      color: $main-text;
+      height: 50px;
+      width: 350px;
+      margin-top: 30px;
+      border-radius: 30px;
+    }
+
+    button:hover {
+      background-color: $main-text;
+      color: $background;
+      border: 3px solid $background;
+    }
+
+    .register-para {
+      position: relative;
+      bottom: 20px;
+      p {
+        text-align: center;
+        color: $background;
+      }
+    }
+  }
+
+  .modal-footer {
+    button {
+      background-color: $background;
+      border: $background;
+      color: $main-text;
+      border-radius: 30px;
+    }
+  }
+}
